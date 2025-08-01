@@ -1,0 +1,13 @@
+{
+  "name": "trading-app",
+  "scripts": {
+    "dev": "concurrently -k -n BACKEND,FRONTEND -c cyan,magenta \"cd backend && uvicorn app.main:app --reload\" \"cd frontend && npm run dev\""
+  },
+  "dependencies": {
+    "chart.js": "^4.5.0",
+    "react-chartjs-2": "^5.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}

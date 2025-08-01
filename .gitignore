@@ -1,0 +1,18 @@
+# Ignore Python venv
+venv/
+__pycache__/
+*.pyc
+
+# Node modules
+frontend/node_modules/
+backend/node_modules/
+
+# Cache and dist
+frontend/.vite/
+frontend/dist/
+
+# Env files
+*.env
+
+backend.zip
+frontend.zip
