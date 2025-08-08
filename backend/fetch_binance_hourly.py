@@ -48,7 +48,7 @@ def fetch_symbol_data(symbol):
 
             for row in data:
                 all_rows.append({
-                    "symbol": symbol.replace("USDT", "/USDT"),
+                    "symbol": symbol,
                     "timestamp": datetime.fromtimestamp(row[0] / 1000),
                     "open": float(row[1]),
                     "high": float(row[2]),
@@ -67,7 +67,7 @@ def fetch_symbol_data(symbol):
     if all_rows:
         # Remove duplicates before insert
         existing_timestamps = set(
-            doc["timestamp"] for doc in collection.find({"symbol": symbol.replace("USDT", "/USDT")}, {"timestamp": 1})
+            doc["timestamp"] for doc in collection.find({"symbol": symbol}, {"timestamp": 1})
         )
         new_rows = [row for row in all_rows if row["timestamp"] not in existing_timestamps]
 
