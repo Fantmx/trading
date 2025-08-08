@@ -43,33 +43,29 @@ coins = {
 }
 
 # Fetch hourly data from CoinGecko
-def fetch_hourly_data(coin_id, vs_currency="usd", days=30, retries=3):
+def fetch_hourly_data(coin_id, vs_currency="usd", days=90, retries=3):
     url = (
-    f"https://pro-api.coingecko.com/api/v3/coins/{coin_id}/market_chart"
-    f"?vs_currency={vs_currency}&days={days}&interval=hourly"
+        f"https://api.coingecko.com/api/v3/coins/{coin_id}/market_chart"
+        f"?vs_currency={vs_currency}&days={days}"
+        f"&x_cg_demo_api_key={COINGECKO_API_KEY}"
     )
-    headers = {
-        "x-cg-pro-api-key": COINGECKO_API_KEY
-    }
+
     for attempt in range(retries):
         try:
-            res = requests.get(url, headers=headers)
-            res.raise_for_status() 
+            res = requests.get(url)
+            print(f"\n[DEBUG] {coin_id} response ({res.status_code}): {res.text[:500]}")
+            res.raise_for_status()
             return res.json()
         except requests.exceptions.HTTPError as e:
-            if res.status_code == 429:
-                print(f"Rate limited on {coin_id}, retrying in 5s... (attempt {attempt + 1})")
-                time.sleep(5)
-            elif res.status_code == 401:
-                print(f"Unauthorized for {coin_id}. Check API key.")
-                break
-            else:
-                print(f"[ERROR] {coin_id}: {e}")
-                break
+            print(f"[ERROR] {coin_id}: {e}")
+            break
         except Exception as e:
             print(f"[ERROR] {coin_id}: {e}")
             break
+
     return None
+
+
 
 # Insert price data into MongoDB
 def insert_hourly_prices(symbol, coin_id):
@@ -110,7 +106,7 @@ def main():
         print(f"\n--- {tier.upper()} ---")
         for symbol, coin_id in assets.items():
             insert_hourly_prices(symbol, coin_id)
-            time.sleep(2)  # prevent rate limits
+            time.sleep(5)  # prevent rate limits
 
 if __name__ == "__main__":
     main()
