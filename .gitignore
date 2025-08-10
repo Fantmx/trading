@@ -16,3 +16,31 @@ frontend/dist/
 
 backend.zip
 frontend.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+
+# Virtual environments
+venv/
+.env
+.env.*
+
+# Data / models / artifacts
+# backend/data/
+# backend/models/
+# backend/logs/
+# backtest_out/
+*.pickle
+*.joblib
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/backend/data/processed/
+*.csv

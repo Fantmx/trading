@@ -1,8 +1,0 @@
-close
-volume
-sma_10
-sma_50
-ema_10
-rsi_14
-macd
-macd_signal

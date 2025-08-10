@@ -1,0 +1,1200 @@
+2025-08-08 21:32:42,719 INFO Starting trading pipeline scheduler…
+2025-08-08 21:32:42,719 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-08 21:32:42,719 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-08 21:32:42,719 INFO Timezone: America/Chicago
+2025-08-08 21:32:42,726 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-08 21:32:42,726 INFO Scheduled INDICATORS at minute :02 (America/Chicago)
+2025-08-08 21:32:42,726 INFO Scheduled INFERENCE at minute :03 (America/Chicago)
+2025-08-08 21:32:42,726 INFO Scheduled PAPER at minute :04 (America/Chicago)
+2025-08-08 22:01:00,006 INFO [INGEST] starting…
+2025-08-08 22:01:16,857 INFO [INGEST] done:
+[INGEST] BTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] ETHUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] BNBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] SOLUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] ADAUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ADAUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] XRPUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] AVAXUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] DOGEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOGEUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] MATICUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=MATICUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] DOTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOTUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] LTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=LTCUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] SHIBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SHIBUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] PEPEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=PEPEUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] APTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=APTUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] INJUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=INJUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] FETUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=FETUSDT&interval=1h&startTime=1754694073779&limit=3
+[INGEST] upserted ~0 bars
+2025-08-08 22:02:00,001 INFO [INDICATORS] starting…
+2025-08-08 22:03:00,005 INFO [INFERENCE] starting…
+2025-08-08 22:03:09,636 INFO [INDICATORS] done:
+[INDICATORS] updated 42742 docs
+2025-08-08 22:03:17,515 INFO [INFERENCE] done:
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+   symbol  prob_up decision
+MATICUSDT   0.7264       UP
+  DOTUSDT   0.6871       UP
+ SHIBUSDT   0.6751     DOWN
+ AVAXUSDT   0.6496     DOWN
+  BTCUSDT   0.6173       UP
+  INJUSDT   0.5842     DOWN
+  SOLUSDT   0.5073       UP
+  FETUSDT   0.4565     DOWN
+  ADAUSDT   0.4235     DOWN
+  ETHUSDT   0.3584     DOWN
+  BNBUSDT   0.3398     DOWN
+ PEPEUSDT   0.3378     DOWN
+ DOGEUSDT   0.3352     DOWN
+  APTUSDT   0.3311     DOWN
+  XRPUSDT   0.2867     DOWN
+  LTCUSDT   0.2859     DOWN
+2025-08-08 22:04:00,013 INFO [PAPER] starting…
+2025-08-08 22:04:17,159 INFO [PAPER] done:
+
+2025-08-08 23:01:03,498 INFO [INGEST] starting…
+2025-08-08 23:01:19,881 INFO [INGEST] done:
+[INGEST] BTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] ETHUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] BNBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] SOLUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] ADAUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ADAUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] XRPUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] AVAXUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] DOGEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOGEUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] MATICUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=MATICUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] DOTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOTUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] LTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=LTCUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] SHIBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SHIBUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] PEPEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=PEPEUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] APTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=APTUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] INJUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=INJUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] FETUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=FETUSDT&interval=1h&startTime=1754697677038&limit=3
+[INGEST] upserted ~0 bars
+2025-08-08 23:02:00,015 INFO [INDICATORS] starting…
+2025-08-08 23:02:57,459 INFO [INDICATORS] done:
+[INDICATORS] updated 125 docs
+2025-08-08 23:03:00,004 INFO [INFERENCE] starting…
+2025-08-08 23:03:17,181 INFO [INFERENCE] done:
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+   symbol  prob_up decision
+MATICUSDT   0.7264       UP
+  DOTUSDT   0.6871       UP
+ SHIBUSDT   0.6751     DOWN
+ AVAXUSDT   0.6496     DOWN
+  BTCUSDT   0.6173       UP
+  INJUSDT   0.5842     DOWN
+  SOLUSDT   0.5073       UP
+  FETUSDT   0.4565     DOWN
+  ADAUSDT   0.4235     DOWN
+  ETHUSDT   0.3584     DOWN
+  BNBUSDT   0.3398     DOWN
+ PEPEUSDT   0.3378     DOWN
+ DOGEUSDT   0.3352     DOWN
+  APTUSDT   0.3311     DOWN
+  XRPUSDT   0.2867     DOWN
+  LTCUSDT   0.2859     DOWN
+2025-08-08 23:04:00,006 INFO [PAPER] starting…
+2025-08-08 23:04:17,647 INFO [PAPER] done:
+
+2025-08-09 00:01:00,012 INFO [INGEST] starting…
+2025-08-09 00:01:16,492 INFO [INGEST] done:
+[INGEST] BTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] ETHUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] BNBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] SOLUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] ADAUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ADAUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] XRPUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] AVAXUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] DOGEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOGEUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] MATICUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=MATICUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] DOTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOTUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] LTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=LTCUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] SHIBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SHIBUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] PEPEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=PEPEUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] APTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=APTUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] INJUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=INJUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] FETUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=FETUSDT&interval=1h&startTime=1754701273580&limit=3
+[INGEST] upserted ~0 bars
+2025-08-09 00:02:00,010 INFO [INDICATORS] starting…
+2025-08-09 00:02:59,717 INFO [INDICATORS] done:
+[INDICATORS] updated 125 docs
+2025-08-09 00:03:00,005 INFO [INFERENCE] starting…
+2025-08-09 00:03:17,188 INFO [INFERENCE] done:
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+   symbol  prob_up decision
+MATICUSDT   0.7264       UP
+  DOTUSDT   0.6871       UP
+ SHIBUSDT   0.6751     DOWN
+ AVAXUSDT   0.6496     DOWN
+  BTCUSDT   0.6173       UP
+  INJUSDT   0.5842     DOWN
+  SOLUSDT   0.5073       UP
+  FETUSDT   0.4565     DOWN
+  ADAUSDT   0.4235     DOWN
+  ETHUSDT   0.3584     DOWN
+  BNBUSDT   0.3398     DOWN
+ PEPEUSDT   0.3378     DOWN
+ DOGEUSDT   0.3352     DOWN
+  APTUSDT   0.3311     DOWN
+  XRPUSDT   0.2867     DOWN
+  LTCUSDT   0.2859     DOWN
+2025-08-09 00:04:00,012 INFO [PAPER] starting…
+2025-08-09 00:04:17,150 INFO [PAPER] done:
+
+2025-08-09 01:01:00,009 INFO [INGEST] starting…
+2025-08-09 01:01:16,406 INFO [INGEST] done:
+[INGEST] BTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] ETHUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] BNBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] SOLUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] ADAUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ADAUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] XRPUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] AVAXUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] DOGEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOGEUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] MATICUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=MATICUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] DOTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOTUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] LTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=LTCUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] SHIBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SHIBUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] PEPEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=PEPEUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] APTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=APTUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] INJUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=INJUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] FETUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=FETUSDT&interval=1h&startTime=1754704873554&limit=3
+[INGEST] upserted ~0 bars
+2025-08-09 01:02:00,004 INFO [INDICATORS] starting…
+2025-08-09 01:02:56,858 INFO [INDICATORS] done:
+[INDICATORS] updated 125 docs
+2025-08-09 01:03:00,010 INFO [INFERENCE] starting…
+2025-08-09 01:03:17,226 INFO [INFERENCE] done:
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+   symbol  prob_up decision
+MATICUSDT   0.7264       UP
+  DOTUSDT   0.6871       UP
+ SHIBUSDT   0.6751     DOWN
+ AVAXUSDT   0.6496     DOWN
+  BTCUSDT   0.6173       UP
+  INJUSDT   0.5842     DOWN
+  SOLUSDT   0.5073       UP
+  FETUSDT   0.4565     DOWN
+  ADAUSDT   0.4235     DOWN
+  ETHUSDT   0.3584     DOWN
+  BNBUSDT   0.3398     DOWN
+ PEPEUSDT   0.3378     DOWN
+ DOGEUSDT   0.3352     DOWN
+  APTUSDT   0.3311     DOWN
+  XRPUSDT   0.2867     DOWN
+  LTCUSDT   0.2859     DOWN
+2025-08-09 01:04:00,000 INFO [PAPER] starting…
+2025-08-09 01:04:17,634 INFO [PAPER] done:
+
+2025-08-09 02:01:00,001 INFO [INGEST] starting…
+2025-08-09 02:01:16,399 INFO [INGEST] done:
+[INGEST] BTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] ETHUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] BNBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] SOLUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] ADAUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ADAUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] XRPUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] AVAXUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] DOGEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOGEUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] MATICUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=MATICUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] DOTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOTUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] LTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=LTCUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] SHIBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SHIBUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] PEPEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=PEPEUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] APTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=APTUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] INJUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=INJUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] FETUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=FETUSDT&interval=1h&startTime=1754708473558&limit=3
+[INGEST] upserted ~0 bars
+2025-08-09 02:02:00,003 INFO [INDICATORS] starting…
+2025-08-09 02:02:58,374 INFO [INDICATORS] done:
+[INDICATORS] updated 125 docs
+2025-08-09 02:03:00,008 INFO [INFERENCE] starting…
+2025-08-09 02:03:17,245 INFO [INFERENCE] done:
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+   symbol  prob_up decision
+MATICUSDT   0.7264       UP
+  DOTUSDT   0.6871       UP
+ SHIBUSDT   0.6751     DOWN
+ AVAXUSDT   0.6496     DOWN
+  BTCUSDT   0.6173       UP
+  INJUSDT   0.5842     DOWN
+  SOLUSDT   0.5073       UP
+  FETUSDT   0.4565     DOWN
+  ADAUSDT   0.4235     DOWN
+  ETHUSDT   0.3584     DOWN
+  BNBUSDT   0.3398     DOWN
+ PEPEUSDT   0.3378     DOWN
+ DOGEUSDT   0.3352     DOWN
+  APTUSDT   0.3311     DOWN
+  XRPUSDT   0.2867     DOWN
+  LTCUSDT   0.2859     DOWN
+2025-08-09 02:04:00,001 INFO [PAPER] starting…
+2025-08-09 02:04:17,130 INFO [PAPER] done:
+
+2025-08-09 03:01:00,003 INFO [INGEST] starting…
+2025-08-09 03:01:17,047 INFO [INGEST] done:
+[INGEST] BTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] ETHUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] BNBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] SOLUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] ADAUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ADAUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] XRPUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] AVAXUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] DOGEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOGEUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] MATICUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=MATICUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] DOTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOTUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] LTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=LTCUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] SHIBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SHIBUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] PEPEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=PEPEUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] APTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=APTUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] INJUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=INJUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] FETUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=FETUSDT&interval=1h&startTime=1754712073565&limit=3
+[INGEST] upserted ~0 bars
+2025-08-09 03:02:00,007 INFO [INDICATORS] starting…
+2025-08-09 03:02:57,458 INFO [INDICATORS] done:
+[INDICATORS] updated 125 docs
+2025-08-09 03:03:00,010 INFO [INFERENCE] starting…
+2025-08-09 03:03:17,179 INFO [INFERENCE] done:
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+   symbol  prob_up decision
+MATICUSDT   0.7264       UP
+  DOTUSDT   0.6871       UP
+ SHIBUSDT   0.6751     DOWN
+ AVAXUSDT   0.6496     DOWN
+  BTCUSDT   0.6173       UP
+  INJUSDT   0.5842     DOWN
+  SOLUSDT   0.5073       UP
+  FETUSDT   0.4565     DOWN
+  ADAUSDT   0.4235     DOWN
+  ETHUSDT   0.3584     DOWN
+  BNBUSDT   0.3398     DOWN
+ PEPEUSDT   0.3378     DOWN
+ DOGEUSDT   0.3352     DOWN
+  APTUSDT   0.3311     DOWN
+  XRPUSDT   0.2867     DOWN
+  LTCUSDT   0.2859     DOWN
+2025-08-09 03:04:00,006 INFO [PAPER] starting…
+2025-08-09 03:04:17,166 INFO [PAPER] done:
+
+2025-08-09 04:01:00,004 INFO [INGEST] starting…
+2025-08-09 04:01:16,359 INFO [INGEST] done:
+[INGEST] BTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] ETHUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] BNBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] SOLUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] ADAUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ADAUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] XRPUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] AVAXUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] DOGEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOGEUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] MATICUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=MATICUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] DOTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOTUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] LTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=LTCUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] SHIBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SHIBUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] PEPEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=PEPEUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] APTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=APTUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] INJUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=INJUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] FETUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=FETUSDT&interval=1h&startTime=1754715673542&limit=3
+[INGEST] upserted ~0 bars
+2025-08-09 04:02:00,012 INFO [INDICATORS] starting…
+2025-08-09 04:02:58,695 INFO [INDICATORS] done:
+[INDICATORS] updated 125 docs
+2025-08-09 04:03:00,012 INFO [INFERENCE] starting…
+2025-08-09 04:03:17,209 INFO [INFERENCE] done:
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+   symbol  prob_up decision
+MATICUSDT   0.7264       UP
+  DOTUSDT   0.6871       UP
+ SHIBUSDT   0.6751     DOWN
+ AVAXUSDT   0.6496     DOWN
+  BTCUSDT   0.6173       UP
+  INJUSDT   0.5842     DOWN
+  SOLUSDT   0.5073       UP
+  FETUSDT   0.4565     DOWN
+  ADAUSDT   0.4235     DOWN
+  ETHUSDT   0.3584     DOWN
+  BNBUSDT   0.3398     DOWN
+ PEPEUSDT   0.3378     DOWN
+ DOGEUSDT   0.3352     DOWN
+  APTUSDT   0.3311     DOWN
+  XRPUSDT   0.2867     DOWN
+  LTCUSDT   0.2859     DOWN
+2025-08-09 04:04:00,011 INFO [PAPER] starting…
+2025-08-09 04:04:17,656 INFO [PAPER] done:
+
+2025-08-09 05:01:00,005 INFO [INGEST] starting…
+2025-08-09 05:01:16,422 INFO [INGEST] done:
+[INGEST] BTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] ETHUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] BNBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] SOLUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] ADAUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ADAUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] XRPUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] AVAXUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] DOGEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOGEUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] MATICUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=MATICUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] DOTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOTUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] LTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=LTCUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] SHIBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SHIBUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] PEPEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=PEPEUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] APTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=APTUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] INJUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=INJUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] FETUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=FETUSDT&interval=1h&startTime=1754719273558&limit=3
+[INGEST] upserted ~0 bars
+2025-08-09 05:02:00,016 INFO [INDICATORS] starting…
+2025-08-09 05:03:00,009 INFO [INFERENCE] starting…
+2025-08-09 05:03:00,565 INFO [INDICATORS] done:
+[INDICATORS] updated 125 docs
+2025-08-09 05:03:17,693 INFO [INFERENCE] done:
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+   symbol  prob_up decision
+MATICUSDT   0.7264       UP
+  DOTUSDT   0.6871       UP
+ SHIBUSDT   0.6751     DOWN
+ AVAXUSDT   0.6496     DOWN
+  BTCUSDT   0.6173       UP
+  INJUSDT   0.5842     DOWN
+  SOLUSDT   0.5073       UP
+  FETUSDT   0.4565     DOWN
+  ADAUSDT   0.4235     DOWN
+  ETHUSDT   0.3584     DOWN
+  BNBUSDT   0.3398     DOWN
+ PEPEUSDT   0.3378     DOWN
+ DOGEUSDT   0.3352     DOWN
+  APTUSDT   0.3311     DOWN
+  XRPUSDT   0.2867     DOWN
+  LTCUSDT   0.2859     DOWN
+2025-08-09 05:04:00,000 INFO [PAPER] starting…
+2025-08-09 05:04:18,638 INFO [PAPER] done:
+
+2025-08-09 06:01:00,007 INFO [INGEST] starting…
+2025-08-09 06:01:16,348 INFO [INGEST] done:
+[INGEST] BTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] ETHUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] BNBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] SOLUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] ADAUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ADAUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] XRPUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] AVAXUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] DOGEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOGEUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] MATICUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=MATICUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] DOTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOTUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] LTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=LTCUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] SHIBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SHIBUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] PEPEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=PEPEUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] APTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=APTUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] INJUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=INJUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] FETUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=FETUSDT&interval=1h&startTime=1754722873508&limit=3
+[INGEST] upserted ~0 bars
+2025-08-09 06:02:00,009 INFO [INDICATORS] starting…
+2025-08-09 06:02:58,581 INFO [INDICATORS] done:
+[INDICATORS] updated 125 docs
+2025-08-09 06:03:00,003 INFO [INFERENCE] starting…
+2025-08-09 06:03:17,455 INFO [INFERENCE] done:
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+   symbol  prob_up decision
+MATICUSDT   0.7264       UP
+  DOTUSDT   0.6871       UP
+ SHIBUSDT   0.6751     DOWN
+ AVAXUSDT   0.6496     DOWN
+  BTCUSDT   0.6173       UP
+  INJUSDT   0.5842     DOWN
+  SOLUSDT   0.5073       UP
+  FETUSDT   0.4565     DOWN
+  ADAUSDT   0.4235     DOWN
+  ETHUSDT   0.3584     DOWN
+  BNBUSDT   0.3398     DOWN
+ PEPEUSDT   0.3378     DOWN
+ DOGEUSDT   0.3352     DOWN
+  APTUSDT   0.3311     DOWN
+  XRPUSDT   0.2867     DOWN
+  LTCUSDT   0.2859     DOWN
+2025-08-09 06:04:00,010 INFO [PAPER] starting…
+2025-08-09 06:04:17,654 INFO [PAPER] done:
+
+2025-08-09 07:01:00,015 INFO [INGEST] starting…
+2025-08-09 07:01:17,239 INFO [INGEST] done:
+[INGEST] BTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] ETHUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] BNBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] SOLUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] ADAUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=ADAUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] XRPUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] AVAXUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] DOGEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOGEUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] MATICUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=MATICUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] DOTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=DOTUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] LTCUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=LTCUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] SHIBUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=SHIBUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] PEPEUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=PEPEUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] APTUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=APTUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] INJUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=INJUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] FETUSDT: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=FETUSDT&interval=1h&startTime=1754726474187&limit=3
+[INGEST] upserted ~0 bars
+2025-08-09 07:02:00,010 INFO [INDICATORS] starting…
+2025-08-09 07:02:59,398 INFO [INDICATORS] done:
+[INDICATORS] updated 125 docs
+2025-08-09 07:03:00,013 INFO [INFERENCE] starting…
+2025-08-09 07:03:17,773 INFO [INFERENCE] done:
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py:158: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  proba = float(model.predict_proba(x.reshape(1, -1))[:, 1])
+   symbol  prob_up decision
+MATICUSDT   0.7264       UP
+  DOTUSDT   0.6871       UP
+ SHIBUSDT   0.6751     DOWN
+ AVAXUSDT   0.6496     DOWN
+  BTCUSDT   0.6173       UP
+  INJUSDT   0.5842     DOWN
+  SOLUSDT   0.5073       UP
+  FETUSDT   0.4565     DOWN
+  ADAUSDT   0.4235     DOWN
+  ETHUSDT   0.3584     DOWN
+  BNBUSDT   0.3398     DOWN
+ PEPEUSDT   0.3378     DOWN
+ DOGEUSDT   0.3352     DOWN
+  APTUSDT   0.3311     DOWN
+  XRPUSDT   0.2867     DOWN
+  LTCUSDT   0.2859     DOWN
+2025-08-09 07:04:00,010 INFO [PAPER] starting…
+2025-08-09 07:04:18,178 INFO [PAPER] done:
+
+2025-08-09 08:01:00,008 INFO Shutting down scheduler.
+2025-08-09 18:01:38,639 WARNING MONGO_URI not found in environment. Make sure your .env is set.
+2025-08-09 18:01:38,639 INFO Starting trading pipeline scheduler…
+2025-08-09 18:01:38,639 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-09 18:01:38,639 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-09 18:01:38,639 INFO Timezone: America/Chicago
+2025-08-09 18:01:38,647 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-09 18:01:38,647 INFO Scheduled INDICATORS at minute :06 (America/Chicago)
+2025-08-09 18:01:38,647 INFO Scheduled INFERENCE at minute :08 (America/Chicago)
+2025-08-09 18:01:38,648 INFO Scheduled PAPER at minute :10 (America/Chicago)
+2025-08-09 18:04:42,677 INFO Starting trading pipeline scheduler…
+2025-08-09 18:04:42,677 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-09 18:04:42,677 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-09 18:04:42,677 INFO Timezone: America/Chicago
+2025-08-09 18:04:42,683 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-09 18:04:42,683 INFO Scheduled INDICATORS at minute :06 (America/Chicago)
+2025-08-09 18:04:42,683 INFO Scheduled INFERENCE at minute :08 (America/Chicago)
+2025-08-09 18:04:42,683 INFO Scheduled PAPER at minute :10 (America/Chicago)
+2025-08-09 18:06:00,005 INFO [INDICATORS] starting…
+2025-08-09 18:06:11,167 ERROR [INDICATORS] exited with code 1:
+Traceback (most recent call last):
+  File "Q:\Coding Projects\Trading\trading\backend\indicators_incremental.py", line 32, in <module>
+    _log_db_health(db, COLLECTION_NAME)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "Q:\Coding Projects\Trading\trading\backend\indicators_incremental.py", line 30, in _log_db_health
+    print(f"[HEALTH] Connected DB='{db.name}', Coll='{collection_name}'  Docs\u2248{count:,}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2248' in position 68: character maps to <undefined>
+2025-08-09 18:08:00,003 INFO [INFERENCE] starting…
+2025-08-09 18:08:10,059 ERROR [INFERENCE] exited with code 1:
+Traceback (most recent call last):
+  File "Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py", line 45, in <module>
+    _log_db_health(db, PRICE_COLL)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py", line 43, in _log_db_health
+    print(f"[HEALTH] Connected DB='{db.name}', Coll='{collection_name}'  Docs\u2248{count:,}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2248' in position 68: character maps to <undefined>
+2025-08-09 18:10:00,004 INFO [PAPER] starting…
+2025-08-09 18:10:09,512 ERROR [PAPER] exited with code 1:
+Traceback (most recent call last):
+  File "Q:\Coding Projects\Trading\trading\backend\paper_executor.py", line 46, in <module>
+    _log_db_health(db, PRICE_COLL)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "Q:\Coding Projects\Trading\trading\backend\paper_executor.py", line 44, in _log_db_health
+    print(f"[HEALTH] Connected DB='{db.name}', Coll='{collection_name}'  Docs\u2248{count:,}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2248' in position 68: character maps to <undefined>
+2025-08-09 18:27:23,436 INFO Starting trading pipeline scheduler…
+2025-08-09 18:27:23,436 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-09 18:27:23,436 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-09 18:27:23,436 INFO Timezone: America/Chicago
+2025-08-09 18:27:23,442 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-09 18:27:23,442 INFO Scheduled INDICATORS at minute :06 (America/Chicago)
+2025-08-09 18:27:23,442 INFO Scheduled INFERENCE at minute :08 (America/Chicago)
+2025-08-09 18:27:23,442 INFO Scheduled PAPER at minute :10 (America/Chicago)
+2025-08-09 19:01:00,010 INFO [INGEST] starting…
+2025-08-09 19:01:00,212 ERROR [INGEST] exited with code 2:
+Q:\Coding Projects\Trading\trading\backend\venv\Scripts\python.exe: can't open file 'Q:\\Coding Projects\\Trading\\trading\\backend\\ingest_latest_binance.py': [Errno 2] No such file or directory
+2025-08-09 19:06:00,012 INFO [INDICATORS] starting…
+2025-08-09 19:06:49,514 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,908
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 125 docs across 17 symbols
+2025-08-09 19:08:00,013 INFO [INFERENCE] starting…
+2025-08-09 19:08:15,026 INFO [INFERENCE] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,908
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+   symbol prob_up                                            decision
+  ADAUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  APTUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+ AVAXUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  BNBUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  BTCUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+ DOGEUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  DOTUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  ETHUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  FETUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  INJUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  LTCUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+MATICUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+ PEPEUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  POLUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+ SHIBUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  SOLUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  XRPUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+2025-08-09 19:10:00,007 INFO [PAPER] starting…
+2025-08-09 19:10:11,898 INFO [PAPER] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,908
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+2025-08-09 19:33:26,374 INFO Starting trading pipeline scheduler…
+2025-08-09 19:33:26,374 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-09 19:33:26,374 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-09 19:33:26,374 INFO Timezone: America/Chicago
+2025-08-09 19:33:26,380 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-09 19:33:26,380 INFO Scheduled INDICATORS at minute :06 (America/Chicago)
+2025-08-09 19:33:26,380 INFO Scheduled INFERENCE at minute :08 (America/Chicago)
+2025-08-09 19:33:26,380 INFO Scheduled PAPER at minute :10 (America/Chicago)
+2025-08-09 19:33:26,380 INFO [INGEST (startup)] starting…
+2025-08-09 19:33:27,408 ERROR [INGEST (startup)] exited with code 1:
+Traceback (most recent call last):
+  File "Q:\Coding Projects\Trading\trading\backend\scripts\ingest_latest_binance.py", line 9, in <module>
+    from app.utils.runtime_state import write_state
+ModuleNotFoundError: No module named 'app'
+2025-08-09 19:33:27,408 INFO [INDICATORS (startup)] starting…
+2025-08-09 19:34:17,070 INFO [INDICATORS (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,908
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 125 docs across 17 symbols
+2025-08-09 19:34:17,071 INFO [INFERENCE (startup)] starting…
+2025-08-09 19:34:29,593 INFO [INFERENCE (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,908
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+   symbol prob_up                                            decision
+  ADAUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  APTUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+ AVAXUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  BNBUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  BTCUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+ DOGEUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  DOTUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  ETHUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  FETUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  INJUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  LTCUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+MATICUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+ PEPEUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  POLUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+ SHIBUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  SOLUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  XRPUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+2025-08-09 19:34:29,594 INFO [PAPER (startup)] starting…
+2025-08-09 19:34:41,475 INFO [PAPER (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,908
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+2025-08-09 19:37:02,282 INFO Starting trading pipeline scheduler…
+2025-08-09 19:37:02,282 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-09 19:37:02,282 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-09 19:37:02,282 INFO Timezone: America/Chicago
+2025-08-09 19:37:02,288 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-09 19:37:02,288 INFO Scheduled INDICATORS at minute :06 (America/Chicago)
+2025-08-09 19:37:02,288 INFO Scheduled INFERENCE at minute :08 (America/Chicago)
+2025-08-09 19:37:02,288 INFO Scheduled PAPER at minute :10 (America/Chicago)
+2025-08-09 19:37:02,288 INFO [INGEST (startup)] starting…
+2025-08-09 19:37:19,519 INFO [INGEST (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,908
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INGEST] BTCUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] ETHUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] BNBUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] SOLUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] ADAUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] XRPUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] AVAXUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] DOGEUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] MATICUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] DOTUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] LTCUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] SHIBUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] PEPEUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] APTUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] INJUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] FETUSDT: 451 geofenced (try another mirror/VPN/node)
+[INGEST] upserted ~0 bars
+2025-08-09 19:37:19,520 INFO [INDICATORS (startup)] starting…
+2025-08-09 19:38:46,315 INFO Starting trading pipeline scheduler…
+2025-08-09 19:38:46,315 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-09 19:38:46,315 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-09 19:38:46,315 INFO Timezone: America/Chicago
+2025-08-09 19:38:46,320 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-09 19:38:46,321 INFO Scheduled INDICATORS at minute :06 (America/Chicago)
+2025-08-09 19:38:46,321 INFO Scheduled INFERENCE at minute :08 (America/Chicago)
+2025-08-09 19:38:46,321 INFO Scheduled PAPER at minute :10 (America/Chicago)
+2025-08-09 19:38:46,321 INFO [INGEST (startup)] starting…
+2025-08-09 19:39:00,258 INFO [INGEST (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,908
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +3 bars
+[INGEST] ETHUSDT: +3 bars
+[INGEST] BNBUSDT: +3 bars
+[INGEST] SOLUSDT: +3 bars
+[INGEST] ADAUSDT: +3 bars
+[INGEST] XRPUSDT: +3 bars
+[INGEST] AVAXUSDT: +3 bars
+[INGEST] DOGEUSDT: +3 bars
+[INGEST] POLUSDT: +3 bars
+[INGEST] DOTUSDT: +3 bars
+[INGEST] LTCUSDT: +3 bars
+[INGEST] SHIBUSDT: +3 bars
+[INGEST] PEPEUSDT: +3 bars
+[INGEST] APTUSDT: +3 bars
+[INGEST] FETUSDT: +3 bars
+[INGEST] upserted ~45 bars
+2025-08-09 19:39:00,259 INFO [INDICATORS (startup)] starting…
+2025-08-09 19:40:05,093 INFO [INDICATORS (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,953
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 40891 docs across 17 symbols
+2025-08-09 19:40:05,093 INFO [INFERENCE (startup)] starting…
+2025-08-09 19:40:17,166 INFO [INFERENCE (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,953
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+   symbol prob_up                                            decision
+  ADAUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  APTUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+ AVAXUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  BNBUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  BTCUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+ DOGEUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  DOTUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  ETHUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  FETUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  INJUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  LTCUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+MATICUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+ PEPEUSDT    None                                   INSUFFICIENT_DATA
+  POLUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+ SHIBUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  SOLUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+  XRPUSDT    None ERROR: Feature shape mismatch, expected: 14, got 27
+2025-08-09 19:40:17,166 INFO [PAPER (startup)] starting…
+2025-08-09 19:40:28,972 INFO [PAPER (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,953
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+2025-08-09 20:15:28,922 INFO Starting trading pipeline scheduler…
+2025-08-09 20:15:28,923 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-09 20:15:28,923 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-09 20:15:28,923 INFO Timezone: America/Chicago
+2025-08-09 20:15:28,929 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-09 20:15:28,929 INFO Scheduled INDICATORS at minute :06 (America/Chicago)
+2025-08-09 20:15:28,929 INFO Scheduled INFERENCE at minute :08 (America/Chicago)
+2025-08-09 20:15:28,929 INFO Scheduled PAPER at minute :10 (America/Chicago)
+2025-08-09 20:15:28,929 INFO [INGEST (startup)] starting…
+2025-08-09 20:15:42,687 INFO [INGEST (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,953
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +3 bars
+[INGEST] ETHUSDT: +3 bars
+[INGEST] BNBUSDT: +3 bars
+[INGEST] SOLUSDT: +3 bars
+[INGEST] ADAUSDT: +3 bars
+[INGEST] XRPUSDT: +3 bars
+[INGEST] AVAXUSDT: +3 bars
+[INGEST] DOGEUSDT: +3 bars
+[INGEST] POLUSDT: +3 bars
+[INGEST] DOTUSDT: +3 bars
+[INGEST] LTCUSDT: +3 bars
+[INGEST] SHIBUSDT: +3 bars
+[INGEST] PEPEUSDT: +3 bars
+[INGEST] APTUSDT: +3 bars
+[INGEST] FETUSDT: +3 bars
+[INGEST] upserted ~45 bars
+2025-08-09 20:15:42,687 INFO [INDICATORS (startup)] starting…
+2025-08-09 20:16:48,858 INFO [INDICATORS (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,998
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 35200 docs across 17 symbols
+2025-08-09 20:16:48,858 INFO [INFERENCE (startup)] starting…
+2025-08-09 20:17:02,191 INFO [INFERENCE (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,998
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+   symbol  prob_up          decision
+  ETHUSDT   0.8078                UP
+  POLUSDT   0.6398                UP
+  BNBUSDT   0.6234                UP
+  XRPUSDT   0.6113                UP
+  LTCUSDT   0.5447                UP
+ AVAXUSDT   0.5337                UP
+MATICUSDT   0.4906              DOWN
+  DOTUSDT   0.4813              DOWN
+  INJUSDT   0.4766              DOWN
+  FETUSDT   0.4582              DOWN
+  APTUSDT   0.4196              DOWN
+  SOLUSDT   0.3987              DOWN
+ DOGEUSDT   0.3260              DOWN
+ SHIBUSDT   0.2882              DOWN
+  BTCUSDT   0.2829              DOWN
+  ADAUSDT   0.2801              DOWN
+ PEPEUSDT      NaN INSUFFICIENT_DATA
+2025-08-09 20:17:02,192 INFO [PAPER (startup)] starting…
+2025-08-09 20:17:14,156 INFO [PAPER (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,998
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+2025-08-09 20:42:12,195 INFO Starting trading pipeline scheduler…
+2025-08-09 20:42:12,195 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-09 20:42:12,195 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-09 20:42:12,196 INFO Timezone: America/Chicago
+2025-08-09 20:42:12,201 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-09 20:42:12,202 INFO Scheduled INDICATORS at minute :06 (America/Chicago)
+2025-08-09 20:42:12,202 INFO Scheduled INFERENCE at minute :08 (America/Chicago)
+2025-08-09 20:42:12,202 INFO Scheduled PAPER at minute :10 (America/Chicago)
+2025-08-09 20:42:12,202 INFO [INGEST (startup)] starting…
+2025-08-09 20:42:41,775 INFO [INGEST (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~323,998
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +31 bars
+[INGEST] ETHUSDT: +30 bars
+[INGEST] BNBUSDT: +33 bars
+[INGEST] SOLUSDT: +33 bars
+[INGEST] ADAUSDT: +33 bars
+[INGEST] XRPUSDT: +33 bars
+[INGEST] AVAXUSDT: +33 bars
+[INGEST] DOGEUSDT: +33 bars
+[INGEST] POLUSDT: +4915 bars
+[INGEST] DOTUSDT: +33 bars
+[INGEST] LTCUSDT: +33 bars
+[INGEST] SHIBUSDT: +33 bars
+[INGEST] PEPEUSDT: +33 bars
+[INGEST] APTUSDT: +33 bars
+[INGEST] FETUSDT: +33 bars
+[INGEST] upserted ~5372 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T06:00:00+00:00  (~-4.3h ago)
+  ETHUSDT: 2025-08-10T06:00:00+00:00  (~-4.3h ago)
+  BNBUSDT: 2025-08-10T06:00:00+00:00  (~-4.3h ago)
+  SOLUSDT: 2025-08-10T06:00:00+00:00  (~-4.3h ago)
+  ADAUSDT: 2025-08-10T06:00:00+00:00  (~-4.3h ago)
+  XRPUSDT: 2025-08-10T06:00:00+00:00  (~-4.3h ago)
+  AVAXUSDT: 2025-08-10T06:00:00+00:00  (~-4.3h ago)
+  DOGEUSDT: 2025-08-10T06:00:00+00:00  (~-4.3h ago)
+  POLUSDT: 2025-08-10T05:00:00+00:00  (~-3.3h ago)
+  DOTUSDT: 2025-08-10T06:00:00+00:00  (~-4.3h ago)
+  LTCUSDT: 2025-08-10T06:00:00+00:00  (~-4.3h ago)
+  SHIBUSDT: 2025-08-10T06:00:00+00:00  (~-4.3h ago)
+  PEPEUSDT: 2025-08-10T06:00:00+00:00  (~-4.3h ago)
+  APTUSDT: 2025-08-10T06:00:00+00:00  (~-4.3h ago)
+  FETUSDT: 2025-08-10T06:00:00+00:00  (~-4.3h ago)
+2025-08-09 20:42:41,775 INFO [INDICATORS (startup)] starting…
+2025-08-09 20:43:50,640 INFO [INDICATORS (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 47443 docs across 17 symbols
+2025-08-09 20:43:50,640 INFO [INFERENCE (startup)] starting…
+2025-08-09 20:44:03,967 INFO [INFERENCE (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+   symbol  prob_up          decision
+  BNBUSDT   0.9377                UP
+  POLUSDT   0.7321                UP
+ AVAXUSDT   0.6755                UP
+  SOLUSDT   0.5890                UP
+  FETUSDT   0.5371                UP
+ DOGEUSDT   0.5192                UP
+  XRPUSDT   0.5071                UP
+ PEPEUSDT   0.5052                UP
+MATICUSDT   0.4906              DOWN
+  INJUSDT   0.4766              DOWN
+  ADAUSDT   0.4688              DOWN
+  DOTUSDT   0.4683              DOWN
+ SHIBUSDT   0.4373              DOWN
+  BTCUSDT   0.4292              DOWN
+  LTCUSDT   0.3838              DOWN
+  ETHUSDT   0.3812              DOWN
+  APTUSDT      NaN INSUFFICIENT_DATA
+2025-08-09 20:44:03,967 INFO [PAPER (startup)] starting…
+2025-08-09 20:44:15,864 INFO [PAPER (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+2025-08-09 20:58:48,996 INFO Starting trading pipeline scheduler…
+2025-08-09 20:58:48,997 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-09 20:58:48,997 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-09 20:58:48,997 INFO Timezone: America/Chicago
+2025-08-09 20:58:49,003 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-09 20:58:49,003 INFO Scheduled INDICATORS at minute :06 (America/Chicago)
+2025-08-09 20:58:49,004 INFO Scheduled INFERENCE at minute :08 (America/Chicago)
+2025-08-09 20:58:49,004 INFO Scheduled PAPER at minute :10 (America/Chicago)
+2025-08-09 20:58:49,004 INFO [INGEST (startup)] starting…
+2025-08-09 20:59:00,010 INFO [INGEST (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +0 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~0 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
+  ETHUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
+  BNBUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
+  SOLUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
+  ADAUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
+  XRPUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
+  AVAXUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
+  DOGEUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
+  POLUSDT: 2025-08-10T05:00:00+00:00  (~-3.0h ago)
+  DOTUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
+  LTCUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
+  SHIBUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
+  PEPEUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
+  APTUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
+  FETUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
+2025-08-09 20:59:00,011 INFO [INDICATORS (startup)] starting…
