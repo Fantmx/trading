@@ -41,6 +41,7 @@ SCRIPTS = {
     "indicators": _resolve_script("indicators_incremental.py"),
     "inference": _resolve_script("inference_per_symbol.py"),
     "paper": _resolve_script("paper_executor.py"),
+    
 }
 # Stagger minutes within the hour to ensure sequential steps
 # :01 ingest, :02 indicators, :03 inference, :04 paper exec
@@ -48,7 +49,8 @@ CRON_MINUTES = {
     "ingest": 1,
     "indicators": 6,
     "inference": 8,
-    "paper": 10,
+    "paper": 10
+    
 }
 
 # APScheduler job options
@@ -144,6 +146,10 @@ def task_paper():
         # paper_main()
         pass
 
+def task_paper_v2():
+    if USE_SUBPROCESS:
+        run_script(SCRIPTS["paper_v2"], "PAPER_V2")
+
 def add_cron_job(sched, func, minute: int, name: str):
     trigger = CronTrigger(minute=minute, timezone=TZ)
     sched.add_job(
@@ -170,6 +176,7 @@ def main():
     add_cron_job(sched, task_indicators, CRON_MINUTES["indicators"], "INDICATORS")
     add_cron_job(sched, task_inference,  CRON_MINUTES["inference"],  "INFERENCE")
     add_cron_job(sched, task_paper,      CRON_MINUTES["paper"],      "PAPER")
+    
 
     # Optional: kick off a first run immediately
     if USE_SUBPROCESS:
@@ -177,7 +184,7 @@ def main():
         run_script(SCRIPTS["indicators"], "INDICATORS (startup)")
         run_script(SCRIPTS["inference"], "INFERENCE (startup)")
         run_script(SCRIPTS["paper"], "PAPER (startup)")
-
+       
 
     try:
         sched.start()

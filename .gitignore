@@ -31,10 +31,10 @@ venv/
 .env.*
 
 # Data / models / artifacts
-# backend/data/
-# backend/models/
-# backend/logs/
-# backtest_out/
+ backend/data/
+ backend/models/
+ backend/logs/
+ backtest_out/
 *.pickle
 *.joblib
 

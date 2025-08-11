@@ -1198,3 +1198,1269 @@ MATICUSDT   0.4906              DOWN
   APTUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
   FETUSDT: 2025-08-10T06:00:00+00:00  (~-4.0h ago)
 2025-08-09 20:59:00,011 INFO [INDICATORS (startup)] starting…
+2025-08-09 21:23:52,153 INFO Starting trading pipeline scheduler…
+2025-08-09 21:23:52,153 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-09 21:23:52,153 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-09 21:23:52,153 INFO Timezone: America/Chicago
+2025-08-09 21:23:52,159 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-09 21:23:52,160 INFO Scheduled INDICATORS at minute :06 (America/Chicago)
+2025-08-09 21:23:52,160 INFO Scheduled INFERENCE at minute :08 (America/Chicago)
+2025-08-09 21:23:52,160 INFO Scheduled PAPER at minute :10 (America/Chicago)
+2025-08-09 21:23:52,160 INFO [INGEST (startup)] starting…
+2025-08-09 21:24:03,303 INFO [INGEST (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +0 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~0 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T06:00:00+00:00  (~-3.6h ago)
+  ETHUSDT: 2025-08-10T06:00:00+00:00  (~-3.6h ago)
+  BNBUSDT: 2025-08-10T06:00:00+00:00  (~-3.6h ago)
+  SOLUSDT: 2025-08-10T06:00:00+00:00  (~-3.6h ago)
+  ADAUSDT: 2025-08-10T06:00:00+00:00  (~-3.6h ago)
+  XRPUSDT: 2025-08-10T06:00:00+00:00  (~-3.6h ago)
+  AVAXUSDT: 2025-08-10T06:00:00+00:00  (~-3.6h ago)
+  DOGEUSDT: 2025-08-10T06:00:00+00:00  (~-3.6h ago)
+  POLUSDT: 2025-08-10T05:00:00+00:00  (~-2.6h ago)
+  DOTUSDT: 2025-08-10T06:00:00+00:00  (~-3.6h ago)
+  LTCUSDT: 2025-08-10T06:00:00+00:00  (~-3.6h ago)
+  SHIBUSDT: 2025-08-10T06:00:00+00:00  (~-3.6h ago)
+  PEPEUSDT: 2025-08-10T06:00:00+00:00  (~-3.6h ago)
+  APTUSDT: 2025-08-10T06:00:00+00:00  (~-3.6h ago)
+  FETUSDT: 2025-08-10T06:00:00+00:00  (~-3.6h ago)
+2025-08-09 21:24:03,304 INFO [INDICATORS (startup)] starting…
+2025-08-09 21:24:57,983 INFO [INDICATORS (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 124 docs across 17 symbols
+2025-08-09 21:24:57,983 INFO [INFERENCE (startup)] starting…
+2025-08-09 21:24:59,024 INFO [INFERENCE (startup)] done:
+[SKIP] No new bars from ingest; skipping inference.
+2025-08-09 21:24:59,024 INFO [PAPER (startup)] starting…
+2025-08-09 21:25:12,234 INFO [PAPER (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals
+2025-08-09 21:45:53,066 INFO Starting trading pipeline scheduler…
+2025-08-09 21:45:53,067 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-09 21:45:53,067 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-09 21:45:53,067 INFO Timezone: America/Chicago
+2025-08-09 21:45:53,074 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-09 21:45:53,074 INFO Scheduled INDICATORS at minute :06 (America/Chicago)
+2025-08-09 21:45:53,074 INFO Scheduled INFERENCE at minute :08 (America/Chicago)
+2025-08-09 21:45:53,074 INFO Scheduled PAPER at minute :10 (America/Chicago)
+2025-08-09 21:45:53,074 INFO [INGEST (startup)] starting…
+2025-08-09 21:46:04,125 INFO [INGEST (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +0 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~0 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T06:00:00+00:00  (~-3.2h ago)
+  ETHUSDT: 2025-08-10T06:00:00+00:00  (~-3.2h ago)
+  BNBUSDT: 2025-08-10T06:00:00+00:00  (~-3.2h ago)
+  SOLUSDT: 2025-08-10T06:00:00+00:00  (~-3.2h ago)
+  ADAUSDT: 2025-08-10T06:00:00+00:00  (~-3.2h ago)
+  XRPUSDT: 2025-08-10T06:00:00+00:00  (~-3.2h ago)
+  AVAXUSDT: 2025-08-10T06:00:00+00:00  (~-3.2h ago)
+  DOGEUSDT: 2025-08-10T06:00:00+00:00  (~-3.2h ago)
+  POLUSDT: 2025-08-10T05:00:00+00:00  (~-2.2h ago)
+  DOTUSDT: 2025-08-10T06:00:00+00:00  (~-3.2h ago)
+  LTCUSDT: 2025-08-10T06:00:00+00:00  (~-3.2h ago)
+  SHIBUSDT: 2025-08-10T06:00:00+00:00  (~-3.2h ago)
+  PEPEUSDT: 2025-08-10T06:00:00+00:00  (~-3.2h ago)
+  APTUSDT: 2025-08-10T06:00:00+00:00  (~-3.2h ago)
+  FETUSDT: 2025-08-10T06:00:00+00:00  (~-3.2h ago)
+2025-08-09 21:46:04,125 INFO [INDICATORS (startup)] starting…
+2025-08-09 21:46:54,901 INFO [INDICATORS (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 124 docs across 17 symbols
+2025-08-09 21:46:54,901 INFO [INFERENCE (startup)] starting…
+2025-08-09 21:46:55,845 INFO [INFERENCE (startup)] done:
+[SKIP] No new bars from ingest; skipping inference.
+2025-08-09 21:46:55,845 INFO [PAPER (startup)] starting…
+2025-08-09 21:47:08,904 INFO [PAPER (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals
+2025-08-09 22:01:00,010 INFO [INGEST] starting…
+2025-08-09 22:01:10,957 INFO [INGEST] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +0 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~0 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T06:00:00+00:00  (~-3.0h ago)
+  ETHUSDT: 2025-08-10T06:00:00+00:00  (~-3.0h ago)
+  BNBUSDT: 2025-08-10T06:00:00+00:00  (~-3.0h ago)
+  SOLUSDT: 2025-08-10T06:00:00+00:00  (~-3.0h ago)
+  ADAUSDT: 2025-08-10T06:00:00+00:00  (~-3.0h ago)
+  XRPUSDT: 2025-08-10T06:00:00+00:00  (~-3.0h ago)
+  AVAXUSDT: 2025-08-10T06:00:00+00:00  (~-3.0h ago)
+  DOGEUSDT: 2025-08-10T06:00:00+00:00  (~-3.0h ago)
+  POLUSDT: 2025-08-10T05:00:00+00:00  (~-2.0h ago)
+  DOTUSDT: 2025-08-10T06:00:00+00:00  (~-3.0h ago)
+  LTCUSDT: 2025-08-10T06:00:00+00:00  (~-3.0h ago)
+  SHIBUSDT: 2025-08-10T06:00:00+00:00  (~-3.0h ago)
+  PEPEUSDT: 2025-08-10T06:00:00+00:00  (~-3.0h ago)
+  APTUSDT: 2025-08-10T06:00:00+00:00  (~-3.0h ago)
+  FETUSDT: 2025-08-10T06:00:00+00:00  (~-3.0h ago)
+2025-08-09 22:06:00,001 INFO [INDICATORS] starting…
+2025-08-09 22:06:54,046 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 124 docs across 17 symbols
+2025-08-09 22:08:00,013 INFO [INFERENCE] starting…
+2025-08-09 22:08:00,874 INFO [INFERENCE] done:
+[SKIP] No new bars from ingest; skipping inference.
+2025-08-09 22:10:00,008 INFO [PAPER] starting…
+2025-08-09 22:10:13,293 INFO [PAPER] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals
+2025-08-09 23:01:00,003 INFO [INGEST] starting…
+2025-08-09 23:01:10,954 INFO [INGEST] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +0 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~0 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T06:00:00+00:00  (~-2.0h ago)
+  ETHUSDT: 2025-08-10T06:00:00+00:00  (~-2.0h ago)
+  BNBUSDT: 2025-08-10T06:00:00+00:00  (~-2.0h ago)
+  SOLUSDT: 2025-08-10T06:00:00+00:00  (~-2.0h ago)
+  ADAUSDT: 2025-08-10T06:00:00+00:00  (~-2.0h ago)
+  XRPUSDT: 2025-08-10T06:00:00+00:00  (~-2.0h ago)
+  AVAXUSDT: 2025-08-10T06:00:00+00:00  (~-2.0h ago)
+  DOGEUSDT: 2025-08-10T06:00:00+00:00  (~-2.0h ago)
+  POLUSDT: 2025-08-10T05:00:00+00:00  (~-1.0h ago)
+  DOTUSDT: 2025-08-10T06:00:00+00:00  (~-2.0h ago)
+  LTCUSDT: 2025-08-10T06:00:00+00:00  (~-2.0h ago)
+  SHIBUSDT: 2025-08-10T06:00:00+00:00  (~-2.0h ago)
+  PEPEUSDT: 2025-08-10T06:00:00+00:00  (~-2.0h ago)
+  APTUSDT: 2025-08-10T06:00:00+00:00  (~-2.0h ago)
+  FETUSDT: 2025-08-10T06:00:00+00:00  (~-2.0h ago)
+2025-08-09 23:06:00,012 INFO [INDICATORS] starting…
+2025-08-09 23:06:53,847 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 124 docs across 17 symbols
+2025-08-09 23:08:00,000 INFO [INFERENCE] starting…
+2025-08-09 23:08:00,841 INFO [INFERENCE] done:
+[SKIP] No new bars from ingest; skipping inference.
+2025-08-09 23:10:00,009 INFO [PAPER] starting…
+2025-08-09 23:10:13,100 INFO [PAPER] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals
+2025-08-10 00:01:00,003 INFO [INGEST] starting…
+2025-08-10 00:01:11,073 INFO [INGEST] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +0 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~0 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T06:00:00+00:00  (~-1.0h ago)
+  ETHUSDT: 2025-08-10T06:00:00+00:00  (~-1.0h ago)
+  BNBUSDT: 2025-08-10T06:00:00+00:00  (~-1.0h ago)
+  SOLUSDT: 2025-08-10T06:00:00+00:00  (~-1.0h ago)
+  ADAUSDT: 2025-08-10T06:00:00+00:00  (~-1.0h ago)
+  XRPUSDT: 2025-08-10T06:00:00+00:00  (~-1.0h ago)
+  AVAXUSDT: 2025-08-10T06:00:00+00:00  (~-1.0h ago)
+  DOGEUSDT: 2025-08-10T06:00:00+00:00  (~-1.0h ago)
+  POLUSDT: 2025-08-10T05:00:00+00:00  (~0.0h ago)
+  DOTUSDT: 2025-08-10T06:00:00+00:00  (~-1.0h ago)
+  LTCUSDT: 2025-08-10T06:00:00+00:00  (~-1.0h ago)
+  SHIBUSDT: 2025-08-10T06:00:00+00:00  (~-1.0h ago)
+  PEPEUSDT: 2025-08-10T06:00:00+00:00  (~-1.0h ago)
+  APTUSDT: 2025-08-10T06:00:00+00:00  (~-1.0h ago)
+  FETUSDT: 2025-08-10T06:00:00+00:00  (~-1.0h ago)
+2025-08-10 00:06:00,014 INFO [INDICATORS] starting…
+2025-08-10 00:06:53,828 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 124 docs across 17 symbols
+2025-08-10 00:08:00,010 INFO [INFERENCE] starting…
+2025-08-10 00:08:00,855 INFO [INFERENCE] done:
+[SKIP] No new bars from ingest; skipping inference.
+2025-08-10 00:10:00,013 INFO [PAPER] starting…
+2025-08-10 00:10:13,314 INFO [PAPER] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals
+2025-08-10 01:01:00,015 INFO [INGEST] starting…
+2025-08-10 01:01:11,145 INFO [INGEST] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,370
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +1 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~1 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T06:00:00+00:00  (~0.0h ago)
+  ETHUSDT: 2025-08-10T06:00:00+00:00  (~0.0h ago)
+  BNBUSDT: 2025-08-10T06:00:00+00:00  (~0.0h ago)
+  SOLUSDT: 2025-08-10T06:00:00+00:00  (~0.0h ago)
+  ADAUSDT: 2025-08-10T06:00:00+00:00  (~0.0h ago)
+  XRPUSDT: 2025-08-10T06:00:00+00:00  (~0.0h ago)
+  AVAXUSDT: 2025-08-10T06:00:00+00:00  (~0.0h ago)
+  DOGEUSDT: 2025-08-10T06:00:00+00:00  (~0.0h ago)
+  POLUSDT: 2025-08-10T11:00:00+00:00  (~-5.0h ago)
+  DOTUSDT: 2025-08-10T06:00:00+00:00  (~0.0h ago)
+  LTCUSDT: 2025-08-10T06:00:00+00:00  (~0.0h ago)
+  SHIBUSDT: 2025-08-10T06:00:00+00:00  (~0.0h ago)
+  PEPEUSDT: 2025-08-10T06:00:00+00:00  (~0.0h ago)
+  APTUSDT: 2025-08-10T06:00:00+00:00  (~0.0h ago)
+  FETUSDT: 2025-08-10T06:00:00+00:00  (~0.0h ago)
+2025-08-10 01:06:00,012 INFO [INDICATORS] starting…
+2025-08-10 01:06:52,118 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,371
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 125 docs across 17 symbols
+2025-08-10 01:08:00,005 INFO [INFERENCE] starting…
+2025-08-10 01:08:09,896 ERROR [INFERENCE] exited with code 1:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,371
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+Traceback (most recent call last):
+  File "Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py", line 194, in <module>
+    fresh_cut = pd.Timestamp.utcnow().tz_localize("UTC") - pd.Timedelta(hours=FRESH_HOURS)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "pandas/_libs/tslibs/timestamps.pyx", line 2299, in pandas._libs.tslibs.timestamps.Timestamp.tz_localize
+TypeError: Cannot localize tz-aware Timestamp, use tz_convert for conversions
+2025-08-10 01:10:00,010 INFO [PAPER] starting…
+2025-08-10 01:10:13,316 INFO [PAPER] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,371
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals
+2025-08-10 02:01:00,001 INFO [INGEST] starting…
+2025-08-10 02:01:13,117 INFO [INGEST] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,371
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +1 bars
+[INGEST] ETHUSDT: +1 bars
+[INGEST] BNBUSDT: +1 bars
+[INGEST] SOLUSDT: +1 bars
+[INGEST] ADAUSDT: +1 bars
+[INGEST] XRPUSDT: +1 bars
+[INGEST] AVAXUSDT: +1 bars
+[INGEST] DOGEUSDT: +1 bars
+[INGEST] POLUSDT: +0 bars
+[INGEST] DOTUSDT: +1 bars
+[INGEST] LTCUSDT: +1 bars
+[INGEST] SHIBUSDT: +1 bars
+[INGEST] PEPEUSDT: +1 bars
+[INGEST] APTUSDT: +1 bars
+[INGEST] FETUSDT: +1 bars
+[INGEST] upserted ~14 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T12:00:00+00:00  (~-5.0h ago)
+  ETHUSDT: 2025-08-10T12:00:00+00:00  (~-5.0h ago)
+  BNBUSDT: 2025-08-10T12:00:00+00:00  (~-5.0h ago)
+  SOLUSDT: 2025-08-10T12:00:00+00:00  (~-5.0h ago)
+  ADAUSDT: 2025-08-10T12:00:00+00:00  (~-5.0h ago)
+  XRPUSDT: 2025-08-10T12:00:00+00:00  (~-5.0h ago)
+  AVAXUSDT: 2025-08-10T12:00:00+00:00  (~-5.0h ago)
+  DOGEUSDT: 2025-08-10T12:00:00+00:00  (~-5.0h ago)
+  POLUSDT: 2025-08-10T11:00:00+00:00  (~-4.0h ago)
+  DOTUSDT: 2025-08-10T12:00:00+00:00  (~-5.0h ago)
+  LTCUSDT: 2025-08-10T12:00:00+00:00  (~-5.0h ago)
+  SHIBUSDT: 2025-08-10T12:00:00+00:00  (~-5.0h ago)
+  PEPEUSDT: 2025-08-10T12:00:00+00:00  (~-5.0h ago)
+  APTUSDT: 2025-08-10T12:00:00+00:00  (~-5.0h ago)
+  FETUSDT: 2025-08-10T12:00:00+00:00  (~-5.0h ago)
+2025-08-10 02:06:00,006 INFO [INDICATORS] starting…
+2025-08-10 02:07:04,377 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 21223 docs across 17 symbols
+2025-08-10 02:08:00,016 INFO [INFERENCE] starting…
+2025-08-10 02:08:09,891 ERROR [INFERENCE] exited with code 1:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+Traceback (most recent call last):
+  File "Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py", line 194, in <module>
+    fresh_cut = pd.Timestamp.utcnow().tz_localize("UTC") - pd.Timedelta(hours=FRESH_HOURS)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "pandas/_libs/tslibs/timestamps.pyx", line 2299, in pandas._libs.tslibs.timestamps.Timestamp.tz_localize
+TypeError: Cannot localize tz-aware Timestamp, use tz_convert for conversions
+2025-08-10 02:10:00,001 INFO [PAPER] starting…
+2025-08-10 02:10:13,073 INFO [PAPER] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals
+2025-08-10 03:01:00,004 INFO [INGEST] starting…
+2025-08-10 03:01:10,922 INFO [INGEST] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +0 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~0 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T12:00:00+00:00  (~-4.0h ago)
+  ETHUSDT: 2025-08-10T12:00:00+00:00  (~-4.0h ago)
+  BNBUSDT: 2025-08-10T12:00:00+00:00  (~-4.0h ago)
+  SOLUSDT: 2025-08-10T12:00:00+00:00  (~-4.0h ago)
+  ADAUSDT: 2025-08-10T12:00:00+00:00  (~-4.0h ago)
+  XRPUSDT: 2025-08-10T12:00:00+00:00  (~-4.0h ago)
+  AVAXUSDT: 2025-08-10T12:00:00+00:00  (~-4.0h ago)
+  DOGEUSDT: 2025-08-10T12:00:00+00:00  (~-4.0h ago)
+  POLUSDT: 2025-08-10T11:00:00+00:00  (~-3.0h ago)
+  DOTUSDT: 2025-08-10T12:00:00+00:00  (~-4.0h ago)
+  LTCUSDT: 2025-08-10T12:00:00+00:00  (~-4.0h ago)
+  SHIBUSDT: 2025-08-10T12:00:00+00:00  (~-4.0h ago)
+  PEPEUSDT: 2025-08-10T12:00:00+00:00  (~-4.0h ago)
+  APTUSDT: 2025-08-10T12:00:00+00:00  (~-4.0h ago)
+  FETUSDT: 2025-08-10T12:00:00+00:00  (~-4.0h ago)
+2025-08-10 03:06:00,005 INFO [INDICATORS] starting…
+2025-08-10 03:06:54,710 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 124 docs across 17 symbols
+2025-08-10 03:08:00,013 INFO [INFERENCE] starting…
+2025-08-10 03:08:00,887 INFO [INFERENCE] done:
+[SKIP] No new bars from ingest; skipping inference.
+2025-08-10 03:10:00,008 INFO [PAPER] starting…
+2025-08-10 03:10:13,270 INFO [PAPER] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals
+2025-08-10 04:01:00,007 INFO [INGEST] starting…
+2025-08-10 04:01:10,965 INFO [INGEST] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +0 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~0 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T12:00:00+00:00  (~-3.0h ago)
+  ETHUSDT: 2025-08-10T12:00:00+00:00  (~-3.0h ago)
+  BNBUSDT: 2025-08-10T12:00:00+00:00  (~-3.0h ago)
+  SOLUSDT: 2025-08-10T12:00:00+00:00  (~-3.0h ago)
+  ADAUSDT: 2025-08-10T12:00:00+00:00  (~-3.0h ago)
+  XRPUSDT: 2025-08-10T12:00:00+00:00  (~-3.0h ago)
+  AVAXUSDT: 2025-08-10T12:00:00+00:00  (~-3.0h ago)
+  DOGEUSDT: 2025-08-10T12:00:00+00:00  (~-3.0h ago)
+  POLUSDT: 2025-08-10T11:00:00+00:00  (~-2.0h ago)
+  DOTUSDT: 2025-08-10T12:00:00+00:00  (~-3.0h ago)
+  LTCUSDT: 2025-08-10T12:00:00+00:00  (~-3.0h ago)
+  SHIBUSDT: 2025-08-10T12:00:00+00:00  (~-3.0h ago)
+  PEPEUSDT: 2025-08-10T12:00:00+00:00  (~-3.0h ago)
+  APTUSDT: 2025-08-10T12:00:00+00:00  (~-3.0h ago)
+  FETUSDT: 2025-08-10T12:00:00+00:00  (~-3.0h ago)
+2025-08-10 04:06:00,012 INFO [INDICATORS] starting…
+2025-08-10 04:06:50,695 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 124 docs across 17 symbols
+2025-08-10 04:08:00,001 INFO [INFERENCE] starting…
+2025-08-10 04:08:00,868 INFO [INFERENCE] done:
+[SKIP] No new bars from ingest; skipping inference.
+2025-08-10 04:10:00,011 INFO [PAPER] starting…
+2025-08-10 04:10:13,083 INFO [PAPER] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals
+2025-08-10 05:01:00,003 INFO [INGEST] starting…
+2025-08-10 05:01:10,988 INFO [INGEST] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +0 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~0 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T12:00:00+00:00  (~-2.0h ago)
+  ETHUSDT: 2025-08-10T12:00:00+00:00  (~-2.0h ago)
+  BNBUSDT: 2025-08-10T12:00:00+00:00  (~-2.0h ago)
+  SOLUSDT: 2025-08-10T12:00:00+00:00  (~-2.0h ago)
+  ADAUSDT: 2025-08-10T12:00:00+00:00  (~-2.0h ago)
+  XRPUSDT: 2025-08-10T12:00:00+00:00  (~-2.0h ago)
+  AVAXUSDT: 2025-08-10T12:00:00+00:00  (~-2.0h ago)
+  DOGEUSDT: 2025-08-10T12:00:00+00:00  (~-2.0h ago)
+  POLUSDT: 2025-08-10T11:00:00+00:00  (~-1.0h ago)
+  DOTUSDT: 2025-08-10T12:00:00+00:00  (~-2.0h ago)
+  LTCUSDT: 2025-08-10T12:00:00+00:00  (~-2.0h ago)
+  SHIBUSDT: 2025-08-10T12:00:00+00:00  (~-2.0h ago)
+  PEPEUSDT: 2025-08-10T12:00:00+00:00  (~-2.0h ago)
+  APTUSDT: 2025-08-10T12:00:00+00:00  (~-2.0h ago)
+  FETUSDT: 2025-08-10T12:00:00+00:00  (~-2.0h ago)
+2025-08-10 05:06:00,008 INFO [INDICATORS] starting…
+2025-08-10 05:06:52,256 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 124 docs across 17 symbols
+2025-08-10 05:08:00,013 INFO [INFERENCE] starting…
+2025-08-10 05:08:00,916 INFO [INFERENCE] done:
+[SKIP] No new bars from ingest; skipping inference.
+2025-08-10 05:10:00,006 INFO [PAPER] starting…
+2025-08-10 05:10:13,085 INFO [PAPER] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals
+2025-08-10 06:01:00,011 INFO [INGEST] starting…
+2025-08-10 06:01:10,970 INFO [INGEST] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +0 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~0 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T12:00:00+00:00  (~-1.0h ago)
+  ETHUSDT: 2025-08-10T12:00:00+00:00  (~-1.0h ago)
+  BNBUSDT: 2025-08-10T12:00:00+00:00  (~-1.0h ago)
+  SOLUSDT: 2025-08-10T12:00:00+00:00  (~-1.0h ago)
+  ADAUSDT: 2025-08-10T12:00:00+00:00  (~-1.0h ago)
+  XRPUSDT: 2025-08-10T12:00:00+00:00  (~-1.0h ago)
+  AVAXUSDT: 2025-08-10T12:00:00+00:00  (~-1.0h ago)
+  DOGEUSDT: 2025-08-10T12:00:00+00:00  (~-1.0h ago)
+  POLUSDT: 2025-08-10T11:00:00+00:00  (~0.0h ago)
+  DOTUSDT: 2025-08-10T12:00:00+00:00  (~-1.0h ago)
+  LTCUSDT: 2025-08-10T12:00:00+00:00  (~-1.0h ago)
+  SHIBUSDT: 2025-08-10T12:00:00+00:00  (~-1.0h ago)
+  PEPEUSDT: 2025-08-10T12:00:00+00:00  (~-1.0h ago)
+  APTUSDT: 2025-08-10T12:00:00+00:00  (~-1.0h ago)
+  FETUSDT: 2025-08-10T12:00:00+00:00  (~-1.0h ago)
+2025-08-10 06:06:00,008 INFO [INDICATORS] starting…
+2025-08-10 06:06:51,914 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 124 docs across 17 symbols
+2025-08-10 06:08:00,004 INFO [INFERENCE] starting…
+2025-08-10 06:08:00,865 INFO [INFERENCE] done:
+[SKIP] No new bars from ingest; skipping inference.
+2025-08-10 06:10:00,008 INFO [PAPER] starting…
+2025-08-10 06:10:13,314 INFO [PAPER] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals
+2025-08-10 07:01:00,013 INFO [INGEST] starting…
+2025-08-10 07:01:11,120 INFO [INGEST] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,385
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +1 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~1 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T12:00:00+00:00  (~0.0h ago)
+  ETHUSDT: 2025-08-10T12:00:00+00:00  (~0.0h ago)
+  BNBUSDT: 2025-08-10T12:00:00+00:00  (~0.0h ago)
+  SOLUSDT: 2025-08-10T12:00:00+00:00  (~0.0h ago)
+  ADAUSDT: 2025-08-10T12:00:00+00:00  (~0.0h ago)
+  XRPUSDT: 2025-08-10T12:00:00+00:00  (~0.0h ago)
+  AVAXUSDT: 2025-08-10T12:00:00+00:00  (~0.0h ago)
+  DOGEUSDT: 2025-08-10T12:00:00+00:00  (~0.0h ago)
+  POLUSDT: 2025-08-10T17:00:00+00:00  (~-5.0h ago)
+  DOTUSDT: 2025-08-10T12:00:00+00:00  (~0.0h ago)
+  LTCUSDT: 2025-08-10T12:00:00+00:00  (~0.0h ago)
+  SHIBUSDT: 2025-08-10T12:00:00+00:00  (~0.0h ago)
+  PEPEUSDT: 2025-08-10T12:00:00+00:00  (~0.0h ago)
+  APTUSDT: 2025-08-10T12:00:00+00:00  (~0.0h ago)
+  FETUSDT: 2025-08-10T12:00:00+00:00  (~0.0h ago)
+2025-08-10 07:06:00,001 INFO [INDICATORS] starting…
+2025-08-10 07:06:54,211 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,386
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 125 docs across 17 symbols
+2025-08-10 07:08:00,007 INFO [INFERENCE] starting…
+2025-08-10 07:08:10,081 ERROR [INFERENCE] exited with code 1:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,386
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+Traceback (most recent call last):
+  File "Q:\Coding Projects\Trading\trading\backend\inference_per_symbol.py", line 194, in <module>
+    fresh_cut = pd.Timestamp.utcnow().tz_localize("UTC") - pd.Timedelta(hours=FRESH_HOURS)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "pandas/_libs/tslibs/timestamps.pyx", line 2299, in pandas._libs.tslibs.timestamps.Timestamp.tz_localize
+TypeError: Cannot localize tz-aware Timestamp, use tz_convert for conversions
+2025-08-10 07:10:00,004 INFO [PAPER] starting…
+2025-08-10 07:10:13,100 INFO [PAPER] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,386
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals
+2025-08-10 07:55:42,777 INFO Starting trading pipeline scheduler…
+2025-08-10 07:55:42,777 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-10 07:55:42,777 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-10 07:55:42,777 INFO Timezone: America/Chicago
+2025-08-10 07:55:42,783 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-10 07:55:42,783 INFO Scheduled INDICATORS at minute :06 (America/Chicago)
+2025-08-10 07:55:42,784 INFO Scheduled INFERENCE at minute :08 (America/Chicago)
+2025-08-10 07:55:42,784 INFO Scheduled PAPER at minute :10 (America/Chicago)
+2025-08-10 07:55:42,784 INFO [INGEST (startup)] starting…
+2025-08-10 07:55:53,741 INFO [INGEST (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,456
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +0 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~0 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+  ETHUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+  BNBUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+  SOLUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+  ADAUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+  XRPUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+  AVAXUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+  DOGEUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+  POLUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+  DOTUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+  LTCUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+  SHIBUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+  PEPEUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+  APTUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+  FETUSDT: 2025-08-10T12:00:00+00:00  (~0.9h ago)
+2025-08-10 07:55:53,741 INFO [INDICATORS (startup)] starting…
+2025-08-10 07:56:45,694 INFO [INDICATORS (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,456
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 125 docs across 17 symbols
+2025-08-10 07:56:45,695 INFO [INFERENCE (startup)] starting…
+2025-08-10 07:56:46,539 INFO [INFERENCE (startup)] done:
+[SKIP] No new bars from ingest; skipping inference.
+2025-08-10 07:56:46,539 INFO [PAPER (startup)] starting…
+2025-08-10 07:57:00,873 INFO [PAPER (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,456
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals (skipped: no_bar=0, no_next=57, dupes=0)
+2025-08-10 08:01:00,002 INFO Shutting down scheduler.
+2025-08-10 08:01:00,005 INFO [INGEST] starting…
+2025-08-10 08:01:13,414 INFO [INGEST] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,456
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +1 bars
+[INGEST] ETHUSDT: +1 bars
+[INGEST] BNBUSDT: +1 bars
+[INGEST] SOLUSDT: +1 bars
+[INGEST] ADAUSDT: +1 bars
+[INGEST] XRPUSDT: +1 bars
+[INGEST] AVAXUSDT: +1 bars
+[INGEST] DOGEUSDT: +1 bars
+[INGEST] POLUSDT: +1 bars
+[INGEST] DOTUSDT: +1 bars
+[INGEST] LTCUSDT: +1 bars
+[INGEST] SHIBUSDT: +1 bars
+[INGEST] PEPEUSDT: +1 bars
+[INGEST] APTUSDT: +1 bars
+[INGEST] FETUSDT: +1 bars
+[INGEST] upserted ~15 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+  ETHUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+  BNBUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+  SOLUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+  ADAUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+  XRPUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+  AVAXUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+  DOGEUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+  POLUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+  DOTUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+  LTCUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+  SHIBUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+  PEPEUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+  APTUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+  FETUSDT: 2025-08-10T13:00:00+00:00  (~0.0h ago)
+2025-08-10 08:06:00,005 INFO [INDICATORS] starting…
+2025-08-10 08:06:58,151 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,471
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 20864 docs across 17 symbols
+2025-08-10 08:08:00,010 INFO [INFERENCE] starting…
+2025-08-10 08:08:13,027 INFO [INFERENCE] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,471
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+  symbol  prob_up decision
+ ETHUSDT   0.7530       UP
+ BNBUSDT   0.6373       UP
+PEPEUSDT   0.5965       UP
+ POLUSDT   0.5418       UP
+ XRPUSDT   0.5325       UP
+SHIBUSDT   0.4995     DOWN
+ ADAUSDT   0.4773     DOWN
+ SOLUSDT   0.4617     DOWN
+ LTCUSDT   0.4544     DOWN
+DOGEUSDT   0.4444     DOWN
+ APTUSDT   0.4424     DOWN
+ FETUSDT   0.4280     DOWN
+ DOTUSDT   0.3930     DOWN
+ BTCUSDT   0.3674     DOWN
+AVAXUSDT   0.3298     DOWN
+2025-08-10 08:10:00,007 INFO [PAPER] starting…
+2025-08-10 08:10:13,422 ERROR [PAPER] exited with code 1:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,471
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+Traceback (most recent call last):
+  File "Q:\Coding Projects\Trading\trading\backend\paper_executor.py", line 108, in <module>
+    main()
+    ~~~~^^
+  File "Q:\Coding Projects\Trading\trading\backend\paper_executor.py", line 99, in main
+    execute_for_bar(s, ts)
+    ~~~~~~~~~~~~~~~^^^^^^^
+  File "Q:\Coding Projects\Trading\trading\backend\paper_executor.py", line 65, in execute_for_bar
+    pos.update_one({"symbol": symbol},
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+                   {"$inc": {"equity": USD_PER_TRADE * net_ret},
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    "$setOnInsert": {"equity": 10000}}, upsert=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Q:\Coding Projects\Trading\trading\backend\venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1336, in update_one
+    self._update_retryable(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        filter,
+        ^^^^^^^
+    ...<11 lines>...
+        comment=comment,
+        ^^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "Q:\Coding Projects\Trading\trading\backend\venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1118, in _update_retryable
+    return self._database.client._retryable_write(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        (write_concern or self.write_concern).acknowledged and not multi,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        operation,
+        ^^^^^^^^^^
+    )
+    ^
+  File "Q:\Coding Projects\Trading\trading\backend\venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2076, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Q:\Coding Projects\Trading\trading\backend\venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1962, in _retry_with_session
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func=func,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "Q:\Coding Projects\Trading\trading\backend\venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "Q:\Coding Projects\Trading\trading\backend\venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ~~~^^
+  File "Q:\Coding Projects\Trading\trading\backend\venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+                                              ~~~~~~~~~~~^^
+  File "Q:\Coding Projects\Trading\trading\backend\venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2877, in _write
+    return self._func(self._session, conn, self._retryable)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Q:\Coding Projects\Trading\trading\backend\venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1098, in _update
+    return self._update(
+           ~~~~~~~~~~~~^
+        conn,
+        ^^^^^
+    ...<15 lines>...
+        comment=comment,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "Q:\Coding Projects\Trading\trading\backend\venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1059, in _update
+    _check_write_command_response(result)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "Q:\Coding Projects\Trading\trading\backend\venv\Lib\site-packages\pymongo\helpers_shared.py", line 288, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "Q:\Coding Projects\Trading\trading\backend\venv\Lib\site-packages\pymongo\helpers_shared.py", line 259, in _raise_last_write_error
+    raise WriteError(error.get("errmsg"), error.get("code"), error)
+pymongo.errors.WriteError: Updating the path 'equity' would create a conflict at 'equity', full error: {'index': 0, 'code': 40, 'errmsg': "Updating the path 'equity' would create a conflict at 'equity'"}
+2025-08-10 08:35:58,798 INFO Starting trading pipeline scheduler…
+2025-08-10 08:35:58,798 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-10 08:35:58,798 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-10 08:35:58,798 INFO Timezone: America/Chicago
+2025-08-10 08:35:58,804 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-10 08:35:58,804 INFO Scheduled INDICATORS at minute :06 (America/Chicago)
+2025-08-10 08:35:58,804 INFO Scheduled INFERENCE at minute :08 (America/Chicago)
+2025-08-10 08:35:58,804 INFO Scheduled PAPER at minute :10 (America/Chicago)
+2025-08-10 08:35:58,804 INFO [INGEST (startup)] starting…
+2025-08-10 08:36:09,681 INFO [INGEST (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,471
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +0 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~0 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+  ETHUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+  BNBUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+  SOLUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+  ADAUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+  XRPUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+  AVAXUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+  DOGEUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+  POLUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+  DOTUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+  LTCUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+  SHIBUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+  PEPEUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+  APTUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+  FETUSDT: 2025-08-10T13:00:00+00:00  (~0.6h ago)
+2025-08-10 08:36:09,682 INFO [INDICATORS (startup)] starting…
+2025-08-10 08:37:01,952 INFO [INDICATORS (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,471
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 125 docs across 17 symbols
+2025-08-10 08:37:01,952 INFO [INFERENCE (startup)] starting…
+2025-08-10 08:37:14,451 INFO [INFERENCE (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,471
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+  symbol  prob_up decision
+ ETHUSDT   0.7530       UP
+ BNBUSDT   0.6373       UP
+PEPEUSDT   0.5965       UP
+ POLUSDT   0.5418       UP
+ XRPUSDT   0.5325       UP
+SHIBUSDT   0.4995     DOWN
+ ADAUSDT   0.4773     DOWN
+ SOLUSDT   0.4617     DOWN
+ LTCUSDT   0.4544     DOWN
+DOGEUSDT   0.4444     DOWN
+ APTUSDT   0.4424     DOWN
+ FETUSDT   0.4280     DOWN
+ DOTUSDT   0.3930     DOWN
+ BTCUSDT   0.3674     DOWN
+AVAXUSDT   0.3298     DOWN
+2025-08-10 08:37:14,452 INFO [PAPER (startup)] starting…
+2025-08-10 08:37:29,282 INFO [PAPER (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,471
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals (skipped: no_bar=0, no_next=59, dupes=13)
+2025-08-10 09:01:00,016 INFO [INGEST] starting…
+2025-08-10 09:01:13,500 INFO [INGEST] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,471
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +1 bars
+[INGEST] ETHUSDT: +1 bars
+[INGEST] BNBUSDT: +1 bars
+[INGEST] SOLUSDT: +1 bars
+[INGEST] ADAUSDT: +1 bars
+[INGEST] XRPUSDT: +1 bars
+[INGEST] AVAXUSDT: +1 bars
+[INGEST] DOGEUSDT: +1 bars
+[INGEST] POLUSDT: +1 bars
+[INGEST] DOTUSDT: +1 bars
+[INGEST] LTCUSDT: +1 bars
+[INGEST] SHIBUSDT: +1 bars
+[INGEST] PEPEUSDT: +1 bars
+[INGEST] APTUSDT: +1 bars
+[INGEST] FETUSDT: +1 bars
+[INGEST] upserted ~15 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+  ETHUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+  BNBUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+  SOLUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+  ADAUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+  XRPUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+  AVAXUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+  DOGEUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+  POLUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+  DOTUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+  LTCUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+  SHIBUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+  PEPEUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+  APTUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+  FETUSDT: 2025-08-10T14:00:00+00:00  (~0.0h ago)
+2025-08-10 09:06:00,011 INFO [INDICATORS] starting…
+2025-08-10 09:07:03,570 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,486
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 21367 docs across 17 symbols
+2025-08-10 09:08:00,014 INFO [INFERENCE] starting…
+2025-08-10 09:08:14,742 INFO [INFERENCE] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,486
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+  symbol  prob_up          decision
+ BNBUSDT   0.8238                UP
+ ETHUSDT   0.7899                UP
+PEPEUSDT   0.6966                UP
+ SOLUSDT   0.6550                UP
+ LTCUSDT   0.6044                UP
+ POLUSDT   0.5978                UP
+DOGEUSDT   0.5916                UP
+ ADAUSDT   0.5657                UP
+ BTCUSDT   0.5646                UP
+ XRPUSDT   0.5301                UP
+ FETUSDT   0.4452              DOWN
+SHIBUSDT   0.3753              DOWN
+ DOTUSDT   0.3720              DOWN
+AVAXUSDT   0.3375              DOWN
+ APTUSDT      NaN INSUFFICIENT_DATA
+2025-08-10 09:10:00,014 INFO [PAPER] starting…
+2025-08-10 09:10:18,444 INFO [PAPER] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,486
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 15 signals (skipped: no_bar=0, no_next=58, dupes=13)
+2025-08-10 10:01:00,009 INFO [INGEST] starting…
+2025-08-10 10:01:13,510 INFO [INGEST] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,486
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +1 bars
+[INGEST] ETHUSDT: +1 bars
+[INGEST] BNBUSDT: +1 bars
+[INGEST] SOLUSDT: +1 bars
+[INGEST] ADAUSDT: +1 bars
+[INGEST] XRPUSDT: +1 bars
+[INGEST] AVAXUSDT: +1 bars
+[INGEST] DOGEUSDT: +1 bars
+[INGEST] POLUSDT: +1 bars
+[INGEST] DOTUSDT: +1 bars
+[INGEST] LTCUSDT: +1 bars
+[INGEST] SHIBUSDT: +1 bars
+[INGEST] PEPEUSDT: +1 bars
+[INGEST] APTUSDT: +1 bars
+[INGEST] FETUSDT: +1 bars
+[INGEST] upserted ~15 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+  ETHUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+  BNBUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+  SOLUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+  ADAUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+  XRPUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+  AVAXUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+  DOGEUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+  POLUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+  DOTUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+  LTCUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+  SHIBUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+  PEPEUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+  APTUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+  FETUSDT: 2025-08-10T15:00:00+00:00  (~0.0h ago)
+2025-08-10 10:06:00,004 INFO [INDICATORS] starting…
+2025-08-10 10:06:59,291 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,501
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 19360 docs across 17 symbols
+2025-08-10 10:08:00,003 INFO [INFERENCE] starting…
+2025-08-10 10:08:12,506 INFO [INFERENCE] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,501
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+  symbol  prob_up          decision
+ ETHUSDT   0.9142                UP
+PEPEUSDT   0.6920                UP
+ SOLUSDT   0.6099                UP
+ BTCUSDT   0.5613                UP
+ ADAUSDT   0.5259                UP
+DOGEUSDT   0.5217                UP
+ DOTUSDT   0.4778              DOWN
+ LTCUSDT   0.4690              DOWN
+SHIBUSDT   0.4584              DOWN
+ XRPUSDT   0.4549              DOWN
+ POLUSDT   0.4426              DOWN
+ BNBUSDT   0.4360              DOWN
+ FETUSDT   0.4160              DOWN
+AVAXUSDT   0.3601              DOWN
+ APTUSDT      NaN INSUFFICIENT_DATA
+2025-08-10 10:10:00,003 INFO [PAPER] starting…
+2025-08-10 10:10:18,479 INFO [PAPER] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,501
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 14 signals (skipped: no_bar=0, no_next=58, dupes=28)
+2025-08-10 11:01:00,012 INFO [INGEST] starting…
+2025-08-10 11:01:13,961 INFO [INGEST] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,501
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +1 bars
+[INGEST] ETHUSDT: +1 bars
+[INGEST] BNBUSDT: +1 bars
+[INGEST] SOLUSDT: +1 bars
+[INGEST] ADAUSDT: +1 bars
+[INGEST] XRPUSDT: +1 bars
+[INGEST] AVAXUSDT: +1 bars
+[INGEST] DOGEUSDT: +1 bars
+[INGEST] POLUSDT: +1 bars
+[INGEST] DOTUSDT: +1 bars
+[INGEST] LTCUSDT: +1 bars
+[INGEST] SHIBUSDT: +1 bars
+[INGEST] PEPEUSDT: +1 bars
+[INGEST] APTUSDT: +1 bars
+[INGEST] FETUSDT: +1 bars
+[INGEST] upserted ~15 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+  ETHUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+  BNBUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+  SOLUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+  ADAUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+  XRPUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+  AVAXUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+  DOGEUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+  POLUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+  DOTUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+  LTCUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+  SHIBUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+  PEPEUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+  APTUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+  FETUSDT: 2025-08-10T16:00:00+00:00  (~0.0h ago)
+2025-08-10 11:06:00,005 INFO [INDICATORS] starting…
+2025-08-10 11:07:03,933 INFO [INDICATORS] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,516
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 16805 docs across 17 symbols
+2025-08-10 11:08:00,008 INFO [INFERENCE] starting…
+2025-08-10 11:08:15,034 INFO [INFERENCE] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,516
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+  symbol  prob_up          decision
+ ETHUSDT   0.9522                UP
+ SOLUSDT   0.7716                UP
+ LTCUSDT   0.7311                UP
+PEPEUSDT   0.7038                UP
+ BNBUSDT   0.5977                UP
+AVAXUSDT   0.5899                UP
+ ADAUSDT   0.5381                UP
+ FETUSDT   0.5329                UP
+SHIBUSDT   0.5215                UP
+DOGEUSDT   0.5190                UP
+ XRPUSDT   0.4958              DOWN
+ APTUSDT   0.4827              DOWN
+ BTCUSDT   0.4768              DOWN
+ DOTUSDT      NaN INSUFFICIENT_DATA
+ POLUSDT      NaN INSUFFICIENT_DATA
+2025-08-10 11:10:00,011 INFO [PAPER] starting…
+2025-08-10 11:10:19,393 INFO [PAPER] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,516
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 14 signals (skipped: no_bar=0, no_next=57, dupes=42)
+2025-08-10 11:12:39,461 INFO Starting trading pipeline scheduler…
+2025-08-10 11:12:39,461 INFO Python: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2025-08-10 11:12:39,461 INFO Working dir: Q:\Coding Projects\Trading\trading\backend
+2025-08-10 11:12:39,461 INFO Timezone: America/Chicago
+2025-08-10 11:12:39,467 INFO Scheduled INGEST at minute :01 (America/Chicago)
+2025-08-10 11:12:39,467 INFO Scheduled INDICATORS at minute :06 (America/Chicago)
+2025-08-10 11:12:39,467 INFO Scheduled INFERENCE at minute :08 (America/Chicago)
+2025-08-10 11:12:39,467 INFO Scheduled PAPER at minute :10 (America/Chicago)
+2025-08-10 11:12:39,467 INFO [INGEST (startup)] starting…
+2025-08-10 11:12:50,438 INFO [INGEST (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,516
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[SYMBOLS] Exchange=BINANCE_US  WS=wss://stream.binance.us:9443/stream
+[SYMBOLS] Requested: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'MATICUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'INJUSDT', 'FETUSDT']
+[SYMBOLS] Aliased : {'MATICUSDT': 'POLUSDT'}
+[SYMBOLS] Missing : ['INJUSDT']
+[SYMBOLS] Using    : ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'AVAXUSDT', 'DOGEUSDT', 'POLUSDT', 'DOTUSDT', 'LTCUSDT', 'SHIBUSDT', 'PEPEUSDT', 'APTUSDT', 'FETUSDT']
+[INGEST] BTCUSDT: +0 bars
+[INGEST] ETHUSDT: +0 bars
+[INGEST] BNBUSDT: +0 bars
+[INGEST] SOLUSDT: +0 bars
+[INGEST] ADAUSDT: +0 bars
+[INGEST] XRPUSDT: +0 bars
+[INGEST] AVAXUSDT: +0 bars
+[INGEST] DOGEUSDT: +0 bars
+[INGEST] POLUSDT: +0 bars
+[INGEST] DOTUSDT: +0 bars
+[INGEST] LTCUSDT: +0 bars
+[INGEST] SHIBUSDT: +0 bars
+[INGEST] PEPEUSDT: +0 bars
+[INGEST] APTUSDT: +0 bars
+[INGEST] FETUSDT: +0 bars
+[INGEST] upserted ~0 bars
+[LATEST] Per-symbol newest timestamps (UTC):
+  BTCUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+  ETHUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+  BNBUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+  SOLUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+  ADAUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+  XRPUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+  AVAXUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+  DOGEUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+  POLUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+  DOTUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+  LTCUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+  SHIBUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+  PEPEUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+  APTUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+  FETUSDT: 2025-08-10T16:00:00+00:00  (~0.2h ago)
+2025-08-10 11:12:50,439 INFO [INDICATORS (startup)] starting…
+2025-08-10 11:13:42,820 INFO [INDICATORS (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,516
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[INDICATORS] updated 125 docs across 17 symbols
+2025-08-10 11:13:42,820 INFO [INFERENCE (startup)] starting…
+2025-08-10 11:13:55,619 INFO [INFERENCE (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,516
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+  symbol  prob_up          decision
+ ETHUSDT   0.9522                UP
+ SOLUSDT   0.7716                UP
+ LTCUSDT   0.7311                UP
+PEPEUSDT   0.7038                UP
+ BNBUSDT   0.5977                UP
+AVAXUSDT   0.5899                UP
+ ADAUSDT   0.5381                UP
+ FETUSDT   0.5329                UP
+SHIBUSDT   0.5215                UP
+DOGEUSDT   0.5190                UP
+ XRPUSDT   0.4958              DOWN
+ APTUSDT   0.4827              DOWN
+ BTCUSDT   0.4768              DOWN
+ DOTUSDT      NaN INSUFFICIENT_DATA
+ POLUSDT      NaN INSUFFICIENT_DATA
+2025-08-10 11:13:55,619 INFO [PAPER (startup)] starting…
+2025-08-10 11:14:11,708 INFO [PAPER (startup)] done:
+[HEALTH] Connected DB='CoinCluster', Coll='binance_price_data'  Docs~329,516
+[HEALTH] Active symbols (17): ['ADAUSDT', 'APTUSDT', 'AVAXUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT']...
+[PAPER] executed 0 signals (skipped: no_bar=0, no_next=57, dupes=56)

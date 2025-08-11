@@ -158,12 +158,17 @@ def resolve_symbols_for_exchange(desired_symbols: List[str]) -> ResolvedSymbols:
         missing=missing,
     )
 
+def _as_utc(dt):
+    # PyMongo returns naive datetimes that are UTC by convention.
+    # Make them explicitly UTC-aware so .timestamp() and .astimezone() are correct.
+    return dt if (getattr(dt, "tzinfo", None) is not None) else dt.replace(tzinfo=timezone.utc)
+
 def last_ts_ms(symbol: str) -> int:
     doc = col.find_one({"symbol": symbol}, sort=[("timestamp", -1)], projection={"timestamp": 1})
     if not doc:
-        # default ~ 400 days ago to backfill (in ms)
         return int((datetime.now(timezone.utc).timestamp() - 400*24*3600) * 1000)
-    return int(doc["timestamp"].timestamp() * 1000)
+    ts = _as_utc(doc["timestamp"])
+    return int(ts.timestamp() * 1000)
 
 def fetch_klines(symbol: str, start_ms: int, limit: int = 1000):
     params = {"symbol": symbol, "interval": "1h", "startTime": start_ms, "limit": limit}
@@ -254,16 +259,17 @@ def catch_up_symbol(sym: str) -> int:
     return total_added
 
 def _print_latest_snapshot(symbols: List[str]):
-    """Tiny latest-per-symbol printout for sanity."""
     print("[LATEST] Per-symbol newest timestamps (UTC):")
+    now_utc = datetime.now(timezone.utc)
     for s in symbols:
         doc = col.find_one({"symbol": s}, sort=[("timestamp", -1)], projection={"timestamp": 1})
         if not doc:
             print(f"  {s}: (none)")
             continue
-        ts = doc["timestamp"].astimezone(timezone.utc)
-        age_h = (datetime.now(timezone.utc) - ts).total_seconds() / 3600.0
-        print(f"  {s}: {ts.isoformat()}  (~{age_h:.1f}h ago)")
+        ts = _as_utc(doc["timestamp"])
+        age_h = (now_utc - ts).total_seconds() / 3600.0
+        flag = "ahead" if age_h < 0 else "ago"
+        print(f"  {s}: {ts.isoformat()}  (~{abs(age_h):.1f}h {flag})")
 
 def main():
     # Resolve symbols for the chosen exchange (handles US aliasing/missing)

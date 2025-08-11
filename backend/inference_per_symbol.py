@@ -26,10 +26,6 @@ try:
 except ModuleNotFoundError:
     from utils.runtime_state import get_last_upserts
 
-# Skip if ingest had no new bars
-if get_last_upserts() == 0:
-    print("[SKIP] No new bars from ingest; skipping inference.")
-    raise SystemExit(0)
 
 # ---------- Robust .env loader (walk up to backend/configs/.env) ----------
 def _find_env_path():
@@ -172,17 +168,20 @@ def build_features_row(df, feature_order):
 def upsert_signal(symbol, ts, prob_up, decision, model_name="global_v3"):
     if not WRITE_SIGNALS:
         return
+    ts_aware = pd.to_datetime(ts, utc=True).to_pydatetime()  # tz-aware UTC
     signals.update_one(
-        {"symbol": symbol, "timestamp": ts},
+        {"symbol": symbol, "timestamp": ts_aware},
         {"$set": {
             "symbol": symbol,
-            "timestamp": ts,
+            "timestamp": ts_aware,
             "prob_up": float(prob_up),
             "decision": decision,
             "model": model_name
         }},
         upsert=True
     )
+
+
 
 # ---------- Main ----------
 if __name__ == "__main__":
@@ -191,7 +190,10 @@ if __name__ == "__main__":
 
     # Keep only "fresh" symbols that have a bar within the last N hours
     FRESH_HOURS = int(os.getenv("FRESH_HOURS", "6"))
-    fresh_cut = pd.Timestamp.utcnow().tz_localize("UTC") - pd.Timedelta(hours=FRESH_HOURS)
+    fresh_cut = pd.Timestamp.now(tz="UTC") - pd.Timedelta(hours=FRESH_HOURS)
+
+
+
 
     def is_fresh(sym: str) -> bool:
         doc = prices.find_one({"symbol": sym}, sort=[("timestamp", -1)], projection={"timestamp": 1})
